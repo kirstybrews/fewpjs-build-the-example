@@ -4,7 +4,17 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Locked and loaded!")
+  likeEvent()
+})
 
+function likeEvent() {
+  document.querySelector('.like-glyph').addEventListener('click', () => {
+    console.log("Liked!")
+    mimicServerCall
+  })
+}
 
 
 //------------------------------------------------------------------------------
